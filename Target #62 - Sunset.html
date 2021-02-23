@@ -1,0 +1,50 @@
+<div class="b">
+  <div class="s"></div>
+  <div class="l"></div>
+  <div class="r"></div>
+</div>
+
+<style> 
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #191919;
+  }
+  .b {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:50;
+    width: 150px;
+    height: 200px;
+    border-radius: 75px 75px 20px 20px;
+    background: #F2AD43;
+    overflow: hidden;
+  }
+  .l {
+    position: absolute;
+    background-color: #E08027;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transform: translate(-100px,100px);
+    z-index: 99;
+  }
+  .r {
+    position: absolute;
+    background-color: #824B20;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transform: translate(50px,100px);
+    z-index: 100;
+  }
+  .s {
+    position: absolute;
+    width: 59px;
+    height: 59px;
+    border-radius: 50%;
+    background-color: #FFF58F;
+    transform: translate(45px, 90px);
+  }
+</style>
