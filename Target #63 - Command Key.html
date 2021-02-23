@@ -1,0 +1,59 @@
+<div class="ct">
+  <div class="tl"></div>
+  <div class="tr"></div>
+  <div class="cc"></div>
+  <div class="bl"></div>
+  <div class="br"></div>
+</div>
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+
+    background-color: #191919;
+
+  }
+  html {
+    
+  }
+  .ct {
+    display: grid;
+    grid-template-areas: 
+      "tl . tr" 
+      ". cc ." 
+      "bl . br";
+   	grid-template-columns: repeat(3, 60px);
+    grid-template-rows: repeat(3, 60px);
+    gap:0;
+        position: absolute;
+    top: 54px;
+    left: 106px;
+    
+  }
+  .tl,.tr,.cc,.bl,.br {
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border: solid 10px #5DBCF9;
+  }
+  .tl {
+    border-radius: 50% 50% 0 50%;
+    grid-area: tl;
+  }
+  .tr {
+    border-radius: 50% 50% 50% 0;
+    grid-area: tr;
+  }
+  .cc {
+    grid-area: cc;
+  }
+  .bl {
+    border-radius: 50% 0 50% 50%;
+    grid-area: bl;
+  }
+  .br {
+    border-radius: 0 50% 50% 50%;
+    grid-area: br;
+  }
+</style>
